@@ -1,0 +1,89 @@
+/* CSS Document */
+
+html, body
+    {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+body 
+	{
+	background: #C0C0C0;
+	font-size: 12px;
+	font-family: Helvetica;
+	color:#000;
+	margin:0;
+	padding:0;
+	}
+
+#Header
+	{
+   margin: 0px 40px 10px 20px ; 
+   padding-top: 10px; /* We use padding instead of margin so that the region is filled white */
+   background-image:	url(headertext.png);
+   height: 400;
+   width: 744;
+   background-repeat: no-repeat;
+    }
+
+#container {
+    min-height: 100%;
+    height: auto; 
+    margin: 0 auto;
+    width: 744px;
+    position: relative;
+    background: #fff;
+    padding: 0 10px 0px 10px; 
+    border-style:solid;
+    border-color:black;
+	border-width: 0px 1px 0px 1px; 
+}
+    
+* html #container {
+    width: 724px;
+}
+
+#container2 {
+        min-height: 100%;
+        height: auto; 
+        margin: 0px auto;
+        width: 600px;
+        position: relative;
+        background: #fff;
+}
+
+
+.menubar li {
+	list-style: none;
+	display: inline;
+}
+
+.menubar li a {
+	color:#000000;	
+	padding: 3px 0.5em;
+    text-decoration: none;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.menubar li a:hover {
+  color: #9ACD32;		   
+}
+
+
+#footer
+        {
+        clear: both;
+        margin-top: 200px;
+        margin-right: 70px;
+        margin-bottom: -20px;
+        color: #474747;
+        text-align: right;
+        line-height: 26px;
+        font-size: 11px;    
+        }	
+        
+#footer ul {padding-right: 40px;}   /*align square with main text on the right */
+
+#footer li {display: inline; margin-left 10px;}

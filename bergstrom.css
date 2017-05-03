@@ -1,0 +1,342 @@
+/* Inspired by Zen Garden submission 175 - 'Business Style', by Gunta Klavina, http://www.klavina.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* html, body { height:100%;}  */ /*This lets us refer to height of a browser window later when
+ trying to get the white text of container to stretch to the bottom of the screen, setting 
+ height=100% for the container itself. 
+ 
+ See e.g. http://www.webhostingtalk.com/archive/thread/334833-1.html
+ 
+ The problem is that when I do so, it fixes a page that
+ didn't previously fill the whole browser while breaking a page that scrolls, in that only the first
+ page worth of content now has a white background 
+ 
+ George Wang's solution:
+ 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+#container {
+    min-height: 100%;
+    height: auto;
+    } 
+ 
+ */
+
+
+html, body
+    {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+ 
+body {   
+    font: 13px Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+    background-image: url(images/paper_backdrop.gif);
+   }
+
+a
+    {
+    color: #307082;
+    }
+    
+a:hover
+    {
+    color: #EF9615; /*#D60808; */
+    }
+
+h2
+	
+	{
+	font: 20px Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	margin: 0 0 0 0;
+	color: #5f687c;
+	}
+	
+    
+h3 {font: 18px Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;}
+	
+#container
+    {
+    min-height: 100%;
+    height: auto; 
+    margin: 0 auto;
+    width: 724px;
+    position: relative;
+    background: #fff;
+    padding: 0 10px 0px 10px; 
+    border-style:solid;
+    border-color:black;
+	 border-width: 0px 1px 0px 1px; 
+    }
+    
+* html #container
+    {
+    width: 744px;
+    }
+
+#mainPageHeader
+	{
+   margin: 0px 40px 10px 20px ; 
+   padding-top: 20px; /* We use padding instead of margin so that the region is filled white */
+   background-image:	url(images/header_name.png);
+   height: 400;
+   width: 744;
+   background-repeat: no-repeat;
+   background-position: 10px 20px;
+    }
+    
+	
+	   	/* Title fonts are 33pt and 20pt URW Gothic L, Semi-Bold generated in the Gimp 2.2 */
+   		/* Font colors are 474747 (charcoal title) and 818da9 (blue subtitle) */
+
+#publicationsHeader
+	{
+   margin: 0px 40px 10px 20px ; 
+   padding-top: 20px; /* We use padding instead of margin so that the region is filled white */
+   background-image:	url(images/header_publications.png);
+   height: 400;
+   width: 744;
+   background-repeat: no-repeat;	
+   background-position: 10px 20px;
+    }
+
+#prospectiveHeader
+	{
+   margin: 0px 40px 10px 20px ; 
+   padding-top: 20px; /* We use padding instead of margin so that the region is filled white */
+   background-image:	url(images/header_prospective.png);
+   height: 400;
+   width: 744;
+   background-repeat: no-repeat;	
+   background-position: 10px 20px;
+    }
+    
+#publicationsHeader #headerQuotation
+	{
+	margin: 50px 20px 20px 450px;
+	color: #5f687c;
+	}   
+
+#informationHeader
+	{
+   margin: 0px 40px 10px 20px ; 
+   padding-top: 20px; /* We use padding instead of margin so that the region is filled white */
+   background-image:	url(images/header_information.png);
+   height: 400;
+   width: 744;
+   background-repeat: no-repeat;
+   background-position: 10px 20px;
+    }
+	
+    
+#diseaseHeader
+	{
+   margin: 0px 40px 10px 20px ; 
+   padding-top: 20px; /* We use padding instead of margin so that the region is filled white */
+   background-image:	url(images/header_disease.png);
+   height: 400;
+   width: 744;
+   background-repeat: no-repeat;
+   background-position: 10px 20px;
+    }
+
+
+#researchHeader
+	{
+   margin: 0px 40px 10px 20px ; 
+   padding-top: 20px; /* We use padding instead of margin so that the region is filled white */
+   background-image:	url(images/header_research.png);
+   height: 400;
+   width: 744;
+   background-repeat: no-repeat;
+   background-position: 10px 20px;
+    }
+
+#researchgroupHeader
+	{
+   margin: 0px 40px 10px 20px ; 
+   padding-top: 20px; /* We use padding instead of margin so that the region is filled white */
+   background-image:	url(images/header_researchgroup.png);
+   height: 400;
+   width: 744;
+   background-repeat: no-repeat;
+   background-position: 10px 20px;
+    }
+	
+
+#Backgroundheader
+	{
+   margin: 0px 40px 10px 20px ; 
+   padding-top: 20px; /* We use padding instead of margin so that the region is filled white */
+   background-image:	url(images/header_background.png);
+   height: 400;
+   width: 744;
+   background-repeat: no-repeat;
+   background-position: 10px 20px;
+    }
+	
+
+    
+#teachingHeader
+	{
+   margin: 0px 40px 10px 20px ; 
+   padding-top: 20px; /* We use padding instead of margin so that the region is filled white */
+   background-image:	url(images/header_teaching.png);
+   height: 400;
+   width: 744;
+   background-repeat: no-repeat;
+   background-position: 10px 20px;
+    }
+.mainText 
+    {
+    padding: 10px 0px 10px 10px;
+    margin: 0px 40px 0 243px;
+    }
+    
+.mainText + .mainText /* For any maintext that follows another maintext */
+   {padding: 0px 0px 10px 10px;} /* we removes the top padding */  
+
+
+#bio354Header
+	{
+   margin: 0px 40px 10px 20px ; 
+   padding-top: 20px; /* We use padding instead of margin so that the region is filled white */
+   background-image:	url(images/header_bio354.png);
+   height: 400;
+   width: 744;
+   background-repeat: no-repeat;
+   background-position: 10px 20px;
+    }
+
+
+#bio429Header
+	{
+   margin: 0px 40px 10px 20px ; 
+   padding-top: 20px; /* We use padding instead of margin so that the region is filled white */
+   background-image:	url(images/header_429_info_theory.png);
+   height: 400;
+   width: 744;
+   background-repeat: no-repeat;
+   background-position: 10px 20px;
+    }
+    
+#sideBar
+    {
+    float: left;
+    width: 210px;
+    padding: 0px;
+    }
+    
+    
+#contact /* part of the sidebar, for the time being */
+    {
+    margin: 20px 0 0 0;
+    left:0;
+    width: 210px;
+    padding: 0 0 0 40px;
+    }
+    
+#lselect ul
+    {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 0 40px;
+    }
+#lselect ul li a
+    {
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+
+	 padding-top: 2px;
+	 padding-bottom: 2px;
+    }
+   
+   /* Applied to a list element li, the class "c" creates a list element that doesn't
+      create a new "division line" on the menu bar. Applied to a link element, it 
+      creates a grey link instead of a blue one.  */ 
+   
+#lselect ul li.c, #lselect ul li a.c
+    {
+    display: inline;
+    font-size: 13px;
+    color: #333;
+    }
+    
+#lselect ul li a.c
+    {
+    text-decoration: none;
+    }
+    
+#lselect ul li a.c:hover
+    {
+    color: #EF9615;
+     
+    }
+    
+#lselect ul li
+    {
+    font-size: 13px;
+    border-bottom: 1px solid #E6EEF0;
+    }
+    
+
+#footer
+    {
+    color: #474747;
+    text-align: right;
+    line-height: 26px;
+    font-size: 11px;    
+    clear: both; 
+   }
+   
+   
+#footer ul {padding-right: 40px;}   /*align square with main text on the right */
+#footer li 
+   {
+   display: inline; margin-left 10px;
+  } /*display the list on one line and put som 
+    space between elements*/
+     
+   
+#footer a
+    {
+    text-decoration: none;
+    } 
+   
+#footer a:hover
+    {
+    text-decoration: underline;
+    }
+
+/* Class information for displaying citations */
+
+div.article {margin: 10px 0 20px 0;}
+
+.title {display: block; font-weight: bold;}
+.authors {display: block;}
+.journal {font-style: italic;}
+.volume {font-weight: bold;}
+.booktitle {font-style: italic;}
+.publisher {font-style: normal;}
+.articlenote {font-size: smaller;}
+a.pdflink, a.htmllink {}
+
+h3.year 
+	{
+	margin: 20px 0 0 0; 
+	padding: 0;
+	font-weight: bold; 
+	color: #474747;
+	text-align: right;}
+	
+
+
+h2 + h3.year /* Remove the top margin if h3.year follows an h2 */
+    {margin: 0};
+
